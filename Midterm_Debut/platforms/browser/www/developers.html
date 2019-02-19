@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="/lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <!-- App root element -->
+    <div id="app">
+
+
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner sliding">
+              <div class="left">
+                  <a href="#" class="link back">
+                  <i class="icon icon-back"></i>
+                  <span class="ios-only"></span>
+                  </a>
+              </div>
+              <div class="title">The Venue</div>
+          </div>
+        </div>
+
+          <!-- Scrollable page content -->
+          <div class="page-content" style="background-image: url(venue-bg.jpg);">
+              <!-- Inset content block -->
+            <div class="list media-list">
+              <ul>
+                <li>
+                  <a class="link popup-open item-link item-content" href="#" data-popup=".popup-jusane">
+                    <div class="item-media"><img src="jusane.jpg" width="80"/></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Jusane Bellezas</div>
+                      </div>
+                      <div class="item-subtitle">Developer</div>
+                    </div></a></li>
+                <li>
+                  <a class="link popup-open item-link item-content" href="#" data-popup=".popup-cara">
+                    <div class="item-media"><img src="cara.jpg" width="80"/></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Cara Rellose</div>
+                      </div>
+                      <div class="item-subtitle">Developer</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="link popup-open item-link item-content" href="#" data-popup=".popup-kate">
+                    <div class="item-media"><img src="kate.jpg" width="80"/></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Kate Ybañez</div>
+                      </div>
+                      <div class="item-subtitle">Developer</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="popup popup-jusane">
+              <div class="page">
+                <div class="navbar">
+                  <div class="navbar-inner">
+                    <div class="title">DEVELOPER</div>
+                    <div class="right"><a href="#" class="link popup-close">Close</a></div>
+                  </div>
+                </div>
+                <div class="page-content">
+                  <div class="block">
+                    <p style="text-align:center;"><img src="jusane.jpg" width="50%" height="50%"/></p>
+                    <p style="text-align:center;">
+                      <strong>JUSANE BELLEZAS</strong>
+                      <br/>
+                      Facebook: www.facebook.com/jsnbellezas
+                      Twitter: www.twitter.com/jtsbellezas
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="popup popup-cara">
+              <div class="page">
+                <div class="navbar">
+                  <div class="navbar-inner">
+                    <div class="title">DEVELOPER</div>
+                    <div class="right"><a href="#" class="link popup-close">Close</a></div>
+                  </div>
+                </div>
+                <div class="page-content">
+                  <div class="block">
+                    <p style="text-align:center;"><img src="cara.jpg" width="50%" height="50%"/></p>
+                    <p style="text-align:center;">
+                      <strong>CARA RELLOSO</strong>
+                      <br/>
+                      Facebook: www.facebook.com/profile.php?id=100000496518239
+                      Twitter: www.twitter.com/relloscara
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="popup popup-kate">
+              <div class="page">
+                <div class="navbar">
+                  <div class="navbar-inner">
+                    <div class="title">DEVELOPER</div>
+                    <div class="right"><a href="#" class="link popup-close">Close</a></div>
+                  </div>
+                </div>
+                <div class="page-content">
+                  <div class="block">
+                    <p style="text-align:center;"><img src="kate.jpg" width="50%" height="50%"/></p>
+                    <p style="text-align:center;">
+                      <strong>KATE YBAÑEZ</strong>
+                      <br/>
+                      Facebook: www.facebook.com/akybanez
+                      Twitter: www.twitter.com/kate_ybz
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>  
+
+            <!--<div class="block-title">Janna's 18th will be at the Marco Polo Hotel, Roxas Avenue, Davao City.</div>
+
+              <div class="block">
+                <img data-src="map.png" class="lazy" height="auto" width="auto">
+              </div>-->
+
+          </div>
+
+
+
+        </div>
+
+
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>

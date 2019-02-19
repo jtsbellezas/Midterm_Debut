@@ -1,0 +1,105 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+@font-face {
+	font-family:AppleGaramondBold;
+    src: url(fonts/AppleGaramond-Bold.ttf);
+
+    font-family:AppleGaramondLight;
+    src: url(fonts/AppleGaramond-Light.ttf);
+
+    font-family:Amarillo;
+    src: url(fonts/Amarillo.ttf);
+}
+
+.timeline-item-title {
+	font-family: AppleGaramondBold;
+}
+
+.timeline-item-text {
+	font-family: AppleGaramondLight;
+}
+
+.tab-link {
+  font-family: Amarillo;
+  font-size: 14px;
+}
+
+.simple-list {
+  font-family: AppleGaramondBold;
+  text-align: center;
+}
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+.index-bg {
+  background: url("invitation2.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+.main-bg {
+  background: url("mainbg.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+.bottom-middle {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-item-date {
+  color: #FFFFFF;
+  font-family: AppleGaramondBold;
+}
+
+.venue-text {
+  font-family: AppleGaramondLight;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.map-text {
+  text-align: center;
+}
+
+.body {
+  background-repeat:no-repeat !important;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+
+.card-header {
+  font-family: Amarillo;
+  text-align: center;
+}
+
+.card-footer {
+  font-family: AppleGaramondLight;
+  text-align: justify;
+}
+
+.dev {
+  font-family: Amarillo;
+}
